@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pynvml
+pyyaml
+scipy
+seaborn
+tensorboardx
+torchmetrics
+transformers
+tqdm
