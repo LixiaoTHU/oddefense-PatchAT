@@ -1,4 +1,7 @@
-# oddefense-PatchAT
+# PBCAT
+
+This is the code for submission_2163 entitled PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection.
+
 
 First, you need to change the variables **checkpoint_at**, **data_root**, and **work_dir** to your own path in the following files:
 
