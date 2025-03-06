@@ -1,5 +1,5 @@
 _base_ = [
-    '../faster_rcnn_r50_fpn_1x_coco_freeat_base.py'
+    '../dn-detr.py'
 ]
 
 test_adv_cfg = dict(
@@ -7,7 +7,7 @@ test_adv_cfg = dict(
     bbox_patch_config = dict(
         patch_flag = True,
         adv_type="cls", # assert in ["cls", "reg", "cwa", "dag", "ours"]
-        patch_type="round", # assert in ["square", "circle"]
+        patch_type="square", # assert in ["square", "circle"]
         step_size=2,
         epsilon=255,
         num_steps=200,

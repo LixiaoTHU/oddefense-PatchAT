@@ -7,6 +7,7 @@ First, you need to change the variables **checkpoint_at**, **data_root**, and **
 
 - `frcnn/faster_rcnn_r50_fpn_1x_coco_freeat_base.py`
 - `fcos/fcos_r50_caffe_fpn_gn-head_1x_coco_freeat_base.py`
+- `dn-detr/dn-detr.py`
 
 ---
 
@@ -40,17 +41,10 @@ pip install yapf==0.40.1
 
 2. **Evaluation:**
 
-    - Square patch attack:
+    ```bash
+    bash tools/dist_test.sh frcnn/test/square_patch.py [weight path] [num_gpus] --eval bbox
+    ```
 
-        ```bash
-        bash tools/dist_test.sh frcnn/test/square_patch.py [weight path] [num_gpus] --eval bbox
-        ```
-
-    - Round patch attack:
-
-        ```bash
-        bash tools/dist_test.sh frcnn/test/round_patch.py [weight path] [num_gpus] --eval bbox
-        ```
 
 ---
 
@@ -64,15 +58,23 @@ pip install yapf==0.40.1
 
 2. **Evaluation:**
 
-    - Square patch attack:
+    ```bash
+    bash tools/dist_test.sh fcos/test/square_patch.py [weight path] [num_gpus] --eval bbox
+    ```
 
-        ```bash
-        bash tools/dist_test.sh fcos/test/square_patch.py [weight path] [num_gpus] --eval bbox
-        ```
 
-    - Round patch attack:
+---
 
-        ```bash
-        bash tools/dist_test.sh fcos/test/round_patch.py [weight path] [num_gpus] --eval bbox
-        ```
+### DN-DETR:
 
+1. **Training:**
+
+    ```bash
+    bash tools/dist_train.sh dn-detr/dn-detr.py [num_gpus]
+    ```
+
+2. **Evaluation:**
+
+    ```bash
+    bash tools/dist_test.sh dndetr/test/square_patch.py [weight path] [num_gpus] --eval bbox
+    ```
