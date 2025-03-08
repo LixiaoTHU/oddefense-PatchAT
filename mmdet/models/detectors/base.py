@@ -375,23 +375,6 @@ class BaseDetector(BaseModule, metaclass=ABCMeta):
                 self.adv_noise = torch.nn.functional.interpolate(self.adv_noise, size=(img_ori.shape[-2], img_ori.shape[-1]))
                 self.aux_img = self.aux_img + self.adv_noise*(1-mask_)
 
-            '''gg = self.img_transform[1](self.aux_img)
-
-            self.cnt += 1
-            if self.cnt < 400:
-                if self.cnt%10==0:
-                    save_img = gg[1].permute(1,2,0).squeeze(0).detach().cpu().numpy()[:,:,(2,1,0)].copy()
-                    box = data['gt_bboxes'][1]
-                    for b in box:
-                        y1, x1, y2, x2 = b
-                        cv2.line(save_img,(int(y1),int(x1)),(int(y1),int(x2)),(0,0,255),2)
-                        cv2.line(save_img,(int(y1),int(x1)),(int(y2),int(x1)),(0,0,255),2)
-                        cv2.line(save_img,(int(y2),int(x2)),(int(y1),int(x2)),(0,0,255),2)
-                        cv2.line(save_img,(int(y2),int(x2)),(int(y2),int(x1)),(0,0,255),2)
-                    cv2.imwrite("/home/zhuyiming/ssd/grad_patch/mmdetection/out/raw%s.png" % (int(self.cnt)), save_img)
-            else:
-                exit(0)'''
-
             self.aux_img = self.img_transform[0](torch.clamp(self.img_transform[1](self.aux_img), min=0, max=255).detach_())
             self.aux_img.requires_grad_()
 
