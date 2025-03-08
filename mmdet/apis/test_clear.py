@@ -259,22 +259,6 @@ def multi_gpu_test(model, data_loader, tmpdir=None, gpu_collect=False, test_adv_
             if 'gt_semantic_seg' in sample:
                 sample.pop('gt_semantic_seg')
 
-            # save = True
-            # if save:
-            #     root = "/home/lixiao/ssd/workdir/oddefense/dataset/" + "dndetr_resnet_all"
-            #     if not os.path.exists(root):
-            #         os.mkdir(root)
-            #     to_save = img_transform[1](img_adv)
-            #     name = sample['img_metas'][0]["ori_filename"]
-            #     cv2.imwrite(os.path.join(root, name), to_save.squeeze(0).permute(1,2,0).detach().cpu().numpy()[:,:,(2,1,0)])
-
-            # root = "/home/lixiao/ssd/workdir/oddefense/dataset/" + "pascal_new/"
-            # if not os.path.exists(root):
-            #     os.mkdir(root)
-            # to_save = img_transform[1](img_adv)
-            # name = sample['img_metas'][0]["ori_filename"]
-            # cv2.imwrite(os.path.join(root, name.split(".")[0] + ".png"), to_save.squeeze(0).permute(1,2,0).detach().cpu().numpy()[:,:,(2,1,0)])
-
             sample['img_metas'] = [sample['img_metas']]
             sample['img'] = [img_adv.detach()]
             with torch.no_grad():
@@ -287,19 +271,6 @@ def multi_gpu_test(model, data_loader, tmpdir=None, gpu_collect=False, test_adv_
             if 'gt_semantic_seg' in data:
                 data.pop('gt_semantic_seg')
             
-            # alter = True
-            # if alter:
-            #     folders = ["none", "frcnn_resnet_all", "fcos_resnet_all", "dndetr_resnet_all", "frcnn_conv_all", "fcos_conv_all", "dndetr_conv_all"]
-            #     root = "/home/lixiao/data3/workdir/oddefense/dataset/" + folders[6]
-            #     name = data['img_metas']._data[0][0]["ori_filename"]
-            #     newimg = cv2.imread(os.path.join(root, name), cv2.COLOR_BGR2RGB)
-            #     newimg = torch.from_numpy(newimg).permute(2, 0, 1).unsqueeze(0).float()
-            #     # newimg = img_transform[1](newimg)
-            #     newimg[0, 0, :, :] = (newimg[0, 0, :, :] - 123.675) / 58.395
-            #     newimg[0, 1, :, :] = (newimg[0, 1, :, :] - 116.28) / 57.12
-            #     newimg[0, 2, :, :] = (newimg[0, 2, :, :] - 103.53) / 57.375
-            #     data['img']._data[0] = newimg.to(data['img']._data[0].device)
-                
 
 
             data['img_metas'] = [data['img_metas']]
