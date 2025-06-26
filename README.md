@@ -78,3 +78,6 @@ pip install yapf==0.40.1
     ```bash
     bash tools/dist_test.sh dndetr/test/square_patch.py [weight path] [num_gpus] --eval bbox
     ```
+
+### CKPTS:
+https://drive.google.com/drive/folders/15OtbR-x8kuyBaK0Z_EdbGw_YIO_Rw_b6?usp=sharing
