@@ -52,7 +52,7 @@ pip install yapf==0.40.1
 | **Model**       | **Config File**                                                                                     | **Checkpoint**                          |
 |------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------|
 | Faster-RCNN  | [`faster_rcnn_r50_fpn_1x_coco_freeat_train.py`](frcnn/frcnn_gradient/faster_rcnn_r50_fpn_1x_coco_freeat_train.py)            | <a href='https://drive.google.com/file/d/1CN_ne8CUnwzzvQ2gHDNvwDQKHfkAXS2a/view?usp=drive_link'> click to download </a> |
-| FCOS            | [`fcos_r50_caffe_fpn_gn-head_1x_coco_freeat_all.py`](fcos/fcos_gradient/fcos_r50_caffe_fpn_gn-head_1x_coco_freeat_all.py)                                       | <a href='https://drive.google.com/file/d/1SE1jsbBjc7-lo9UcsNCblU-aShmI9QH8/view?usp=drive_link'> click to download </a>            |
+| FCOS            | [`fcos_r50_caffe_fpn_gn-head_1x_coco_freeat_train.py`](fcos/fcos_gradient/fcos_r50_caffe_fpn_gn-head_1x_coco_freeat_train.py)                                       | <a href='https://drive.google.com/file/d/1SE1jsbBjc7-lo9UcsNCblU-aShmI9QH8/view?usp=drive_link'> click to download </a>            |
 | DN-DETR         | [`dn-detr.py`](dn-detr/dn-detr.py)                                   | <a href='https://drive.google.com/file/d/1CN_ne8CUnwzzvQ2gHDNvwDQKHfkAXS2a/view?usp=drive_link'> click to download </a>         |
 
 <h3>
