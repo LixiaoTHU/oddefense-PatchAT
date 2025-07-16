@@ -6,7 +6,10 @@
 </div>
 
 <h2 id="quick-start">Quick Start</h2>
-This is the official implementation for ''PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection'', ICCV 2025.
+This is the official implementation for ''PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection'', ICCV 2025.  
+  
+This work follows "**On the Importance of Backbone to the Adversarial Robustness of Object Detectors**" to defend against physically realizable attacks.  
+🔗 Project page: [https://github.com/thu-ml/oddefense](https://github.com/thu-ml/oddefense)
 
 <h3>Preparation</h3>
 
@@ -64,7 +67,7 @@ If you find that our work is helpful to you, please star this project and consid
 @article{pbcat,
   title={PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection},
   author={Li, Xiao and Zhu, Yiming and Huang, Yifan and Zhang, Wei and He, Yingzhe and Shi, Jie and Hu, Xiaolin},
-  journal={Int. Conf. Comput. Vis. (ICCV)}, 
+  journal={IEEE InternationalConference on Computer Vision}, 
   year={2025}
   }
 ```
