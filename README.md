@@ -8,7 +8,7 @@
 <h2 id="quick-start">Quick Start</h2>
 This is the official implementation for ''PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection'', ICCV 2025.  
   
-This work follows "**On the Importance of Backbone to the Adversarial Robustness of Object Detectors**" to defend against physically realizable attacks.  
+This work is based on our prior work "**On the Importance of Backbone to the Adversarial Robustness of Object Detectors**"(IEEE TIFS) to defend against pixel-based adversarial attacks.  
 🔗 Project page: [https://github.com/thu-ml/oddefense](https://github.com/thu-ml/oddefense)
 
 <h3>Preparation</h3>
@@ -64,10 +64,17 @@ Acknowledgement
 
 If you find that our work is helpful to you, please star this project and consider cite:
 ```
-@article{pbcat,
-  title={PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection},
+@inproceedings{li2025pbcat,
+  title={PBCAT: Patch-based composite adversarial training against physically realizable attacks on object detection},
   author={Li, Xiao and Zhu, Yiming and Huang, Yifan and Zhang, Wei and He, Yingzhe and Shi, Jie and Hu, Xiaolin},
-  journal={IEEE InternationalConference on Computer Vision}, 
+  booktitle={{IEEE InternationalConference on Computer Vision},
   year={2025}
-  }
+}
+@article{li2025importance,
+  title={On the importance of backbone to the adversarial robustness of object detectors},
+  author={Li, Xiao and Chen, Hang and Hu, Xiaolin},
+  journal={IEEE Transactions on Information Forensics and Security},
+  year={2025},
+  publisher={IEEE}
+}
 ```
