@@ -67,7 +67,7 @@ If you find that our work is helpful to you, please star this project and consid
 @inproceedings{li2025pbcat,
   title={PBCAT: Patch-based composite adversarial training against physically realizable attacks on object detection},
   author={Li, Xiao and Zhu, Yiming and Huang, Yifan and Zhang, Wei and He, Yingzhe and Shi, Jie and Hu, Xiaolin},
-  booktitle={{IEEE InternationalConference on Computer Vision},
+  booktitle={IEEE InternationalConference on Computer Vision},
   year={2025}
 }
 @article{li2025importance,
