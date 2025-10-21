@@ -50,6 +50,12 @@ pip install yapf==0.40.1
     bash tools/dist_test.sh [config_file] [ckpt_path] [num_gpus] --eval bbox
     ```
 
+<h3>Testing</h3>
+
+For adversarial testing and evaluation, please refer to the related work:  
+**A Single Set of Adversarial Clothes Breaks Multiple Defense Methods in the Physical World**  
+🔗 [adv-clothes-break-multiple-defenses](https://github.com/weiz0823/adv-clothes-break-multiple-defenses)
+
 <h2 id="models">Models</h2>
 
 | **Model**       | **Config File**                                                                                     | **Checkpoint**                          |
