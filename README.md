@@ -1,4 +1,4 @@
-<div align="center">
+<img width="1838" height="432" alt="image" src="https://github.com/user-attachments/assets/a45ef189-3b85-43ab-9653-229a288fc506" /><div align="center">
   <h3>PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection</h3>
   <a href="https://arxiv.org/abs/2506.23581">
         <img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-2506.23581-b31b1b.svg">
@@ -8,8 +8,11 @@
 <h2 id="quick-start">Quick Start</h2>
 This is the official implementation for ''PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection'', ICCV 2025.  
   
-This work is based on our prior work "**On the Importance of Backbone to the Adversarial Robustness of Object Detectors**"(IEEE TIFS) to defend against pixel-based adversarial attacks.  
+This work is based on our prior work:
+(1) "**On the Importance of Backbone to the Adversarial Robustness of Object Detectors**"(IEEE TIFS) to defend against pixel-based adversarial attacks.  
 🔗 Project page: [https://github.com/thu-ml/oddefense](https://github.com/thu-ml/oddefense)
+(2) **A Single Set of Adversarial Clothes Breaks Multiple Defense Methods in the Physical World** to evaluate different defense methods using adaptive attacks.  
+🔗 [adv-clothes-break-multiple-defenses](https://github.com/weiz0823/adv-clothes-break-multiple-defenses)
 
 <h3>Preparation</h3>
 
@@ -45,14 +48,7 @@ pip install yapf==0.40.1
     ```
 
 3. **Evaluation**  
-  Run the following command to evaluate your model:
-    ```bash
-    bash tools/dist_test.sh [config_file] [ckpt_path] [num_gpus] --eval bbox
-    ```
-
-<h3>Testing</h3>
-
-For adversarial testing and evaluation, please refer to the related work:  
+  For adversarial evaluation, please refer to our prior work:  
 **A Single Set of Adversarial Clothes Breaks Multiple Defense Methods in the Physical World**  
 🔗 [adv-clothes-break-multiple-defenses](https://github.com/weiz0823/adv-clothes-break-multiple-defenses)
 
