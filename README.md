@@ -9,10 +9,12 @@
 This is the official implementation for ''PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection'', ICCV 2025.  
   
 This work is based on our prior work:
+
 (1) "**On the Importance of Backbone to the Adversarial Robustness of Object Detectors**"(IEEE TIFS) to defend against pixel-based adversarial attacks.  
 🔗 Project page: [https://github.com/thu-ml/oddefense](https://github.com/thu-ml/oddefense)
+
 (2) **A Single Set of Adversarial Clothes Breaks Multiple Defense Methods in the Physical World** to evaluate different defense methods using adaptive attacks.  
-🔗 [adv-clothes-break-multiple-defenses](https://github.com/weiz0823/adv-clothes-break-multiple-defenses)
+🔗 Project page: [adv-clothes-break-multiple-defenses](https://github.com/weiz0823/adv-clothes-break-multiple-defenses)
 
 <h3>Preparation</h3>
 
