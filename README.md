@@ -1,9 +1,8 @@
-<img width="1838" height="432" alt="image" src="https://github.com/user-attachments/assets/a45ef189-3b85-43ab-9653-229a288fc506" /><div align="center">
+
   <h3>PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection</h3>
   <a href="https://arxiv.org/abs/2506.23581">
         <img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-2506.23581-b31b1b.svg">
   </a>
-</div>
 
 <h2 id="quick-start">Quick Start</h2>
 This is the official implementation for ''PBCAT: Patch-Based Composite Adversarial Training against Physically Realizable Attacks on Object Detection'', ICCV 2025.  
